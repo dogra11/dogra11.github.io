@@ -283,7 +283,7 @@ h2.big em{font:italic 400 1.05em var(--serif);letter-spacing:-.02em;color:var(--
 .ct .eyebrow{color:#7d776d}
 .ct h2{font:800 clamp(64px,13vw,220px)/.82 var(--disp);letter-spacing:-.06em}
 .ct h2 em{font:italic 400 1em var(--serif);color:var(--acc);letter-spacing:-.03em}
-.ct-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;margin-top:60px}
+.ct-row{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;margin-top:60px}
 .mag{width:190px;height:190px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;text-align:center;font:600 17px/1.2 var(--disp);transition:transform .25s cubic-bezier(.2,.9,.2,1)}
 .mag:hover{background:#ff6d38}
 .mailbox{font:600 clamp(20px,2.6vw,36px) var(--disp);letter-spacing:-.02em;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
@@ -293,7 +293,7 @@ h2.big em{font:italic 400 1.05em var(--serif);letter-spacing:-.02em;color:var(--
 .ct-links a{border:1px solid #3a3835;padding:11px 20px;border-radius:999px;font-weight:500;transition:all .25s}
 .ct-links a:hover{background:#f2ede4;color:#141312}
 .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:120px;padding-top:24px;border-top:1px solid #2c2a27;font:13px var(--mono);color:#7d776d}
-.giant{font:800 22vw/.75 var(--disp);letter-spacing:-.07em;color:transparent;-webkit-text-stroke:1px #2c2a27;margin-top:40px;white-space:nowrap;text-align:center;user-select:none}
+.giant{pointer-events:none;position:relative;z-index:0;font:800 22vw/.75 var(--disp);letter-spacing:-.07em;color:transparent;-webkit-text-stroke:1px #2c2a27;margin-top:40px;white-space:nowrap;text-align:center;user-select:none}
 
 .toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,200%);opacity:0;background:var(--acc);color:#fff;padding:12px 20px;border-radius:999px;font:600 14px var(--sans);z-index:160;transition:all .35s;white-space:nowrap}
 .toast.show{transform:translate(-50%,0);opacity:1}
